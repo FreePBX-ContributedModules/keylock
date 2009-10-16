@@ -16,4 +16,23 @@ unset($fcu);
 unset($fct);
 unset($fcs);
 
+
+global $astman;
+global $amp_conf;
+
+
+$sql = "SELECT * FROM users";
+$userresults = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
+
+//add details to astdb
+if ($astman) {
+        foreach($userresults as $usr) {
+                extract($usr);
+                $astman->database_deltree("KEYLOCK/".$extension);
+        }
+} else {
+        echo _("Cannot connect to Asterisk Manager with ").$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"];
+}
+
+
 ?>

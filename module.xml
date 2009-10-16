@@ -1,12 +1,13 @@
 <module>
 	<rawname>keylock</rawname>
 	<name>Key Lock</name>
-	<version>0.4</version>
+	<version>0.4.1</version>
 	<changelog>
 		*0.1* Key Lock
 		*0.2* Toggle y botones para activar y desactivar el modulo
 		*0.3* Passwords desligados del voicemail. Extension para asignar un password.
 		*0.4* Se obliga a colocar un password en el momento de creacion de password para bloquear telefono. Es posible ahora bloquear el telefono marcando el codigo de bloqueo + password
+		*0.4.1* La desinstalación dejaba datos en la bd de asterisk, se corrigio ese detalle.
 	</changelog>
 	<type>setup</type>
 	<category>Inbound Call Control</category>
