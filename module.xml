@@ -15,7 +15,7 @@
 		This module allows the user to lock or unlock his or her extension by
 dialing the appropriate code and a pin. When the extension is locked,
 only calls destined to numbers specified in the module's configuration
-can be made.   
+can be made.  Developed by Maikel Salazar. Sponsored by TI Soluciones http://www.solucionesit.com.ve 
 	</description>
 	<menuitems>
 		<keylock>Key Lock</keylock>
